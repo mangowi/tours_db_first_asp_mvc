@@ -25,10 +25,13 @@ namespace Tours_DB_First.Controllers
         {
 
             // LINQ
-          //  var tours = db.Tours.Include(t => t.Rating)
-              //  .Where(t =>t.Rating.Name == "Difficult")
-              //  .OrderBy(t =>t.Name);
-
+            //  var tours = db.Tours.Include(t => t.Rating)
+            //  .Where(t =>t.Rating.Name == "Difficult")
+            //  .OrderBy(t =>t.Name);
+            var tours = from t in db.Tours
+                        where t.Rating.Name == "Difficult"
+                        orderby t.Name
+                        select t;
 
             return View(tours.ToList());
         }
