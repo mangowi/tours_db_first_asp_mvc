@@ -8,9 +8,9 @@ namespace Tours_DB_First
 {
     public class NotifyHub : Hub
     {
-        public void Hello()
+        public void SendNotification(string message)
         {
-            Clients.All.hello();
+            Clients.Others.showNotification(message);
         }
     }
 }
