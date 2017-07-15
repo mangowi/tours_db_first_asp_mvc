@@ -65,5 +65,7 @@ Putting data to the database using API
 		You can check on the SQL for the changes, by double clicking the Database File on your Visual Studio.
 
 
-		
+DELETE
+	On Composer
+	You can delete by putting the tours api url with an id of the tour that you want to delete, change the request to Delete and the excute
 
