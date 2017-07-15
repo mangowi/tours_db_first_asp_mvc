@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Tours_DB_First.Models.Tour>
+﻿@model IEnumerable<ExploreTanga.DAL.Tour>
 
 @{
     ViewBag.Title = "Index";
@@ -61,3 +61,32 @@
 }
 
 </table>
+@section scripts{
+
+    <script src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="~/signalr/hubs"></script> <!--Configuring script for signalR-->
+
+    <script>
+
+        var notify = $.connection.notifyHub; // our SignalR class but should be called with start of lowercase for JavaScript convertion
+        // showNotification is being called from method in controller of the SignalR
+        notify.client.showNotification = function (message) {
+            alert(message);
+        };
+
+        $.connection.hub.start()
+            .done(function () {
+                @{
+                 @*dd This should be same as one in the controller of our SignalR*@     
+                    if (ViewBag.Notify)
+                    {
+
+                        <text>notify.server.sendNotification("Notice: A new tour has been added. Please reflesh page ");</text>
+                    }
+                }
+
+            });
+
+    </script>
+
+}
