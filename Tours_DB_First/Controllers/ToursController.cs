@@ -23,9 +23,11 @@ namespace Tours_DB_First.Controllers
 
         public ActionResult Difficult()
         {
-            var tours = db.Tours.Include(t => t.Rating)
-                .Where(t =>t.Rating.Name == "Difficult")
-                .OrderBy(t =>t.Name);
+
+            // LINQ
+          //  var tours = db.Tours.Include(t => t.Rating)
+              //  .Where(t =>t.Rating.Name == "Difficult")
+              //  .OrderBy(t =>t.Name);
 
 
             return View(tours.ToList());
