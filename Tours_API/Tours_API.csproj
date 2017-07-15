@@ -236,6 +236,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ToursController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="ExploreAPI.Client.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExploreAPI.Client.designer.cs">
+      <DependentUpon>ExploreAPI.Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -278,6 +284,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ExploreAPI.Client" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
