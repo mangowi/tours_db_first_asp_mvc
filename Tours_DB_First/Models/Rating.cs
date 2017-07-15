@@ -11,7 +11,8 @@ namespace Tours_DB_First.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Rating
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,6 +22,8 @@ namespace Tours_DB_First.Models
         }
     
         public int Id { get; set; }
+
+        [Display(Name = "Rating")]
         public string Name { get; set; }
         public string Description { get; set; }
     
