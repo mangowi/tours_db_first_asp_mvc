@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public partial class Tour
+    public class Tour
     {
         public int Id { get; set; }
         public string Name { get; set; }
