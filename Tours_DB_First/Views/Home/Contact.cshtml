@@ -15,3 +15,29 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+<h1>Live help</h1>
+
+Username: <input type="text" id="username"/>
+Message: <input type="text" id="message"/>
+<input type="button" id="send" value="Send"/>
+@section scripts{
+
+    <script src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="~/signalr/hubs"></script> <!--Configuring script for signalR-->
+    
+    <script>
+        var liveHelp = $.connection.liveHelpTour;
+        liveHelp.client.showMessage = function(username, message) {
+            $('#liveHelp').append('<li>' + username + ': ' + message + '<li>');
+        };
+
+        $.connection.hub.start()
+            .done(function() {
+                liveHelp.server.sendMessage($('#username').val(), $('#message').val());
+                $('#message').val(''); //Set it empty
+            });
+
+    </script>
+    
+
+}

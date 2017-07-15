@@ -15,8 +15,9 @@ namespace Tours_DB_First.Controllers
         private MyDbContext db = new MyDbContext();
 
         // GET: Tours
-        public ActionResult Index()
+        public ActionResult Index(bool notifyUsers = false)
         {
+            ViewBag.Notify = notifyUsers;
             var tours = db.Tours.Include(t => t.Rating);
             return View(tours.ToList());
         }
@@ -69,7 +70,7 @@ namespace Tours_DB_First.Controllers
             {
                 db.Tours.Add(tour);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new {notifyUsers = true});
             }
 
             ViewBag.RatingId = new SelectList(db.Ratings, "Id", "Name", tour.RatingId);
