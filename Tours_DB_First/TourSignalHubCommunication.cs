@@ -10,7 +10,7 @@ namespace Tours_DB_First
     {
         public void Hello()
         {
-            Clients.All.hello();
+            Clients.All.introduce("Hello Tours this is SignalR");
         }
     }
 }
