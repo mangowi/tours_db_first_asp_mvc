@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Tours_DB_First.Models;
+using ExploreTanga.DAL;
 
 namespace Tours_DB_First.Controllers
 {
