@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tours_DB_First", "Tours_DB_First\Tours_DB_First.csproj", "{1A85A830-268C-4A94-83DB-1B068DC74AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tours_API", "Tours_API\Tours_API.csproj", "{2C9514E5-3759-472B-B763-76761284F350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreTanga.DAL", "ExploreTanga.DAL\ExploreTanga.DAL.csproj", "{C00D3DF8-9483-4182-B547-9D2945BA29D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1A85A830-268C-4A94-83DB-1B068DC74AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A85A830-268C-4A94-83DB-1B068DC74AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A85A830-268C-4A94-83DB-1B068DC74AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C9514E5-3759-472B-B763-76761284F350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9514E5-3759-472B-B763-76761284F350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9514E5-3759-472B-B763-76761284F350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9514E5-3759-472B-B763-76761284F350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00D3DF8-9483-4182-B547-9D2945BA29D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00D3DF8-9483-4182-B547-9D2945BA29D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00D3DF8-9483-4182-B547-9D2945BA29D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00D3DF8-9483-4182-B547-9D2945BA29D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
