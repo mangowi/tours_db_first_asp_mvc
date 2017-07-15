@@ -21,6 +21,16 @@ namespace Tours_DB_First.Controllers
             return View(tours.ToList());
         }
 
+        public ActionResult Difficult()
+        {
+            var tours = db.Tours.Include(t => t.Rating)
+                .Where(t =>t.Rating.Name == "Difficult")
+                .OrderBy(t =>t.Name);
+
+
+            return View(tours.ToList());
+        }
+
         // GET: Tours/Details/5
         public ActionResult Details(int? id)
         {
