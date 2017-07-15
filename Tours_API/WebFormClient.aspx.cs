@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Tours_API
 {
-    public partial class ExploreAPI : System.Web.UI.Page
+    public partial class WebFormClient : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

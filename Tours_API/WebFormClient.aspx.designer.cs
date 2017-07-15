@@ -11,7 +11,7 @@ namespace Tours_API
 {
 
 
-    public partial class ExploreAPI
+    public partial class WebFormClient
     {
 
         /// <summary>
