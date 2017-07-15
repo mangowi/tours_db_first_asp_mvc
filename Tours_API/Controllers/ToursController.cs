@@ -16,9 +16,12 @@ namespace Tours_API.Controllers
     {
         private MyDbContext db = new MyDbContext();
 
+
         // GET: api/Tours
         public IQueryable<Tour> GetTours()
         {
+            db.Configuration.ProxyCreationEnabled = false;
+
             return db.Tours;
         }
 
