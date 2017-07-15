@@ -315,6 +315,7 @@
     <Content Include="Views\Tours\Details.cshtml" />
     <Content Include="Views\Tours\Edit.cshtml" />
     <Content Include="Views\Tours\Index.cshtml" />
+    <Content Include="Views\Tours\Difficult.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
